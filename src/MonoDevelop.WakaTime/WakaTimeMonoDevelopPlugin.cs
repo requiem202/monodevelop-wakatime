@@ -1,5 +1,4 @@
 using System;
-using Mono.TextEditor;
 using MonoDevelop.Ide;
 using MonoDevelop.Core;
 using MonoDevelop.Ide.Gui;

@@ -1,42 +1,45 @@
-MonoDevelop/Xamarin Studio add-in for WakaTime
+Visul Studio for Mac(Preview) add-in for WakaTime
 ==============================================
 
 WakaTime is a productivity & time tracking tool for programmers. Once the WakaTime plugin is installed, you get a dashboard with reports about your programming by time, language, project, and branch.
+
+I built this fork aginst Visual Studio for Mac (Preview 4).
+Neither Xamarin Studio on macOS nor Windows works!
 
 Installation
 ------------
 
 Heads Up! WakaTime depends on [Python](http://www.python.org/getit/) being installed to work correctly.
 
-1. Inside MonoDevelop/Xamarin Studio, navigate to `Tools` -> `Add-in Manager`
+NOT WORKING AT THE MOMENT. PLEASE INSTALL MANUALLY.
 
-2. Click the `Gallery` tab, then search for `wakatime`.
+~~1. Inside MonoDevelop/Xamarin Studio, navigate to `Tools` -> `Add-in Manager`~~
 
-3. Click the `Install` button and then when add-in installation dialog popups click `Install`.
+~~2. Click the `Gallery` tab, then search for `wakatime`.~~
 
-4. On MonoDevelop/Xamarin Studio versions prior to 5.10 you might get an error message, just ignore it, it's a Mono.Addin bug, it has been already solved in latest releases.
+~~3. Click the `Install` button and then when add-in installation dialog popups click `Install`.~~
 
-5. Enter your [api key](https://wakatime.com/settings#apikey) from [https://wakatime.com/settings#apikey](https://wakatime.com/settings#apikey), then click `Apply` button.
+~~4. On MonoDevelop/Xamarin Studio versions prior to 5.10 you might get an error message, just ignore it, it's a Mono.Addin bug, it has been already solved in latest releases.~~
 
-6. You might have to restart your MonoDevelop/Xamarin Studio
+~~5. Enter your [api key](https://wakatime.com/settings#apikey) from [https://wakatime.com/settings#apikey](https://wakatime.com/settings#apikey), then click `Apply` button.~~
 
-7. Use MonoDevelop/Xamarin Studio like you normally do and your time will be tracked for you automatically.
+~~6. You might have to restart your MonoDevelop/Xamarin Studio~~
 
-8. Visit https://wakatime.com to see your logged time.
+~~7. Use MonoDevelop/Xamarin Studio like you normally do and your time will be tracked for you automatically.~~
+
+~~8. Visit https://wakatime.com to see your logged time.~~
 
 Installing manually
 ------------
 You can build and install this addin manually. On Linux you can skip the first step.
 
-1. On Mac OS X and Windows you might have to make `mdtool` globally accessible by..
-    * On Mac OS X: `ln -sv /usr/bin/mdtool /Applications/Xamarin Studio.app/Contents/MacOS/mdtool`
-    * On Windows: add `%ProgramFiles%"\Xamarin Studio\bin` or `%ProgramFiles(x86)%"\Xamarin Studio\bin` append to PATH environment variable
+1. The After Build script assumed your Visual Studio.app is at `/Applications/Visual Studio.app/Contents/MacOS/vstool`. Edit it to suit your environment.
 
-2. Just open the solution in MonoDevelop/Xamarin Studio and build it using the appropriate configuration (`Debug` for Linux and Mac and `DebugWin32` for Windows).
+2. Just open the solution in Visual Studio for Mac and build it using the appropriate configuration (`Debug` for ~~Linux~~ and Mac ~~and `DebugWin32` for Windows~~).
  
-3. Inside MonoDevelop/Xamarin Studio, navigate to `Tools` -> `Add-in Manager`
+3. Inside Visual Studio for Mac, navigate to `Tools` -> `Extensions`
 
-4. Click the `Install from file...` button and browse to `/path/to/monodevelop-wakatime/bin/Debug` or `DebugWin32` folder, depending on your OS and install MonoDevelop.WakaTime_x.x.mpack
+4. Click the `Install from file...` button and browse to `/path/to/monodevelop-wakatime/bin/Debug` ~~or `DebugWin32`~~ folder, depending on your OS and install MonoDevelop.WakaTime_x.x.mpack
 
 5. Click the `Install` button and follow the installation manual above starting from step 4.
 
